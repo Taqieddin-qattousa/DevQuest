@@ -1,6 +1,18 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: 'Chivo Thin Italic';
+  src: url('assets/fonts/chivo/Chivo-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'LibreFranklin-ExtraBold';
+  src: url('assets/fonts/librefranklinfont/LibreFranklin-ExtraBold.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
 
 .App-logo {
   height: 40vmin;
