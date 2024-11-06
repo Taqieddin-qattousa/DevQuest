@@ -1,0 +1,29 @@
+.course-card {
+    background-color: #ffffff;
+    color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .course-icon {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .course-rating, .course-level, .course-students {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .enroll-button {
+    background-color: #1e3c90;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

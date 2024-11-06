@@ -6,6 +6,7 @@
   }
   
   .faq h2 {
+    margin-top: 0px;
     font-size: 48px;
     font-weight: bold;
   }
@@ -18,7 +19,6 @@
   }
   
   .faq-btn {
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #1da1f2;
     color: white;
