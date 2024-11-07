@@ -1,0 +1,116 @@
+/* PricingPage.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .pricing-page {
+    text-align: center;
+    color: white;
+    background: linear-gradient(180deg, #0d0e15, #1d1e30);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #1a1b2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header nav a {
+    margin-left: 1rem;
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .header nav a:hover {
+    color: #fff;
+  }
+  
+  .main-content {
+    margin-top: 2rem;
+  }
+  
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .main-content p {
+    margin-top: 0.5rem;
+    color: #bbb;
+  }
+  
+  .toggle {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .toggle-option {
+    background: #282a3a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+  }
+  
+  .toggle-option:hover {
+    background: #3b3e56;
+  }
+  
+  .pricing-card {
+    background: #2e3150;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-card h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .pricing-card h3 span {
+    color: #fff;
+  }
+  
+  .pricing-card p {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  .choose-plan {
+    background: #4a4de1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .choose-plan:hover {
+    background: #3b3ed9;
+  }
+  
