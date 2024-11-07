@@ -1,23 +1,15 @@
 // PricingPage.js
 
 import React from 'react';
-import './PricingPage.css';
+import 'styles/PricingPage.css';
+import Navbar from 'components/Navbar';
+
 
 const PricingPage = () => {
   return (
     <div className="pricing-page">
-      {/* Header */}
-      <header className="header">
-        <div className="logo">DevQuest</div>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#courses">Courses</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#login">Log in</a>
-          <a href="#signup">Sign up</a>
-        </nav>
-      </header>
-
+      
+      <Navbar />
       {/* Main Content */}
       <main className="main-content">
         <h1>Select the best plan that suits you</h1>
@@ -38,7 +30,9 @@ const PricingPage = () => {
           <button className="choose-plan">Choose Plan</button>
         </div>
       </main>
+    
     </div>
+    
   );
 };
 
