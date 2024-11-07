@@ -9,6 +9,9 @@ const CoursesPage = () => {
   return (
     
     <div className="courses-page">
+      <div style={{ color: 'black', backgroundColor: 'lightgrey', padding: '20px' }}>
+  <h1>Test Content</h1>
+</div>
         <Navbar/>
       <header className="courses-header">
         <h1>All Courses</h1>
