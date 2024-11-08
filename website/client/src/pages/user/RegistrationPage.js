@@ -1,60 +1,92 @@
-// RegistrationPage.js
+import React, { useState } from 'react';
+import 'styles/AuthPage.css';
 
-import React from 'react';
-import 'styles/RegistrationPage.css';
+const SignupPage = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    country: 'Palestine',
+  });
 
-const RegistrationPage = () => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <div className="registration-page">
-      {/* Left Column - Registration Form */}
-      <div className="registration-form">
-        <h2>Create an account</h2>
-        <p>Already have an account? <a href="#login">Log in</a></p>
-        
-        <form>
+    <div className="container">
+      <div className="form-container">
+        <h1>Create an account</h1>
+        <p>Already have an account? <a href="/LoginPage">Log in</a></p>
+        <form onSubmit={handleSubmit} className="form">
           <label>
             Name
-            <input type="text" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="input"
+            />
           </label>
-          
           <label>
             Email address
-            <input type="email" placeholder="Email address" />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="input"
+            />
           </label>
-          
           <label>
             Password
-            <input type="password" placeholder="Password" />
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+              className="input"
+            />
+            <p className="hint">Use 8 or more characters with a mix of letters, numbers & symbols</p>
           </label>
-          
           <label>
             Country
-            <select>
-              <option value="palestine">Palestine</option>
-              <option value="usa">USA</option>
-              <option value="canada">Canada</option>
-              {/* Add more countries as needed */}
+            <select
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+              className="select"
+            >
+              <option value="Palestine">Palestine</option>
+              <option value="Other">Other</option>
             </select>
           </label>
-
-          <p>By creating an account, you agree to our <a href="#terms">Terms of Use</a> and <a href="#privacy">Privacy Policy</a>.</p>
-
-          <div className="captcha-placeholder">[CAPTCHA Placeholder]</div>
-          
-          <button type="submit" className="create-account-btn">Create account</button>
+          <div className="captcha">
+            <input type="checkbox" required /> I'm not a robot
+          </div>
+          <button type="submit" className="button">Create account</button>
         </form>
+        <p>By creating an account, you agree to our <a href="/terms">Terms of use</a> and <a href="/privacy">Privacy Policy</a></p>
       </div>
-
-      {/* Right Column - Welcome Message */}
-      <div className="welcome-message">
-        <p>
-          Welcome! Create your account to embark on your programming journey with us.
-          Whether you're a beginner or looking to sharpen your skills, we're here to help 
-          you every step of the way. Let's start coding together!
-        </p>
+      <div className="welcome-container">
+        <h2>Welcome!</h2>
+        <p>Create your account to embark on your programming journey with us. Whether you’re a beginner or looking to sharpen your skills, we’re here to help you every step of the way. Let’s start coding together!</p>
       </div>
     </div>
   );
 };
 
-export default RegistrationPage;
+export default SignupPage;
