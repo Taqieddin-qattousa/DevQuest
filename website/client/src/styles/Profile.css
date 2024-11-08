@@ -1,0 +1,114 @@
+.profile-page {
+  display: flex;
+  height: 100vh;
+  background-color: #0f184a;
+  color: #fff;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #16256b;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background-color: #2b4ac8;
+  border-radius: 10px;
+}
+
+.sidebar .link {
+  color: inherit; /* Use the same color as the parent */
+  text-decoration: none; /* Remove underline */
+}
+
+.profile-content {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(180deg, #0f184a, #16256b);
+  border-left: 2px solid #1f2d5b;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #2b4ac8;
+}
+
+.update-btn, .remove-btn {
+  background-color: transparent;
+  border: 1px solid #2b4ac8;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.update-btn:hover, .remove-btn:hover {
+  background-color: #2b4ac8;
+}
+
+.profile-form {
+  margin-top: 20px;
+}
+
+.profile-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.profile-form input, .profile-form select, .profile-form textarea {
+  width: 300px; /* Replace 300px with your desired width */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #2b4ac8;
+  border-radius: 5px;
+  background-color: #1a1f5c;
+  color: #fff;
+}
+
+
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  background-color: #2b4ac8;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #d9534f;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

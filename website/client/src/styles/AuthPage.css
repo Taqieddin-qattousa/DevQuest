@@ -32,6 +32,7 @@
   border-radius: 4px;
   border: 1px solid #444;
   background-color: #333;
+ 
   color: #fff;
 }
 
@@ -71,9 +72,10 @@
 .welcome-container {
   flex: 1;
   padding: 2rem;
-  background-color: rgba(0, 51, 102, 0.5); /* Slightly transparent blue */
+  background-color: rgba(0, 51, 102, 0.4); /* Slightly transparent blue */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }

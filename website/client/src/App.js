@@ -8,7 +8,13 @@ import PricingPage from './pages/user/PricingPage';
 import RegistrationPage from './pages/user/RegistrationPage';
 import LoginPage from './pages/user/LoginPage';
 import ForgotPasswordPage from './pages/user/ForgotPasswordPage';
+import Profile from './pages/user/Profile';
+import ChangePassword from './pages/user/ChangePassword';
+import Billing from 'pages/user/Billing';
+import Dashboard from './pages/admin/Dashboard';
+
 import './App.css';
+
 function App() {
  
   return (
@@ -22,6 +28,10 @@ function App() {
         <Route path="/RegistrationPage" element={<RegistrationPage />} />
         <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/ChangePassword" element={<ChangePassword />} />
+        <Route path="/Billing" element={<Billing />} />
       </Routes>
     </BrowserRouter>
       
