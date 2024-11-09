@@ -5,42 +5,20 @@
   color: #fff;
 }
 
-.sidebar {
-  width: 200px;
-  background-color: #16256b;
-  padding: 20px;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar li {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.sidebar li.active {
-  background-color: #2b4ac8;
-  border-radius: 10px;
-}
-
-.sidebar .link {
-  color: inherit; /* Use the same color as the parent */
-  text-decoration: none; /* Remove underline */
-}
-
 .profile-content {
   flex: 1;
-  padding: 20px;
-  background: linear-gradient(180deg, #0f184a, #16256b);
+   padding: 50px;
+  background: linear-gradient(180deg, #1E3C90, #09112A);
   border-left: 2px solid #1f2d5b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin: 20px;
 }
 
 .profile-header {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .profile-avatar {
@@ -58,11 +36,12 @@
 
 .update-btn, .remove-btn {
   background-color: transparent;
-  border: 1px solid #2b4ac8;
+  border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 0.9em;
 }
 
 .update-btn:hover, .remove-btn:hover {
@@ -78,17 +57,40 @@
   margin: 10px 0 5px;
 }
 
-.profile-form input, .profile-form select, .profile-form textarea {
-  width: 300px; /* Replace 300px with your desired width */
+.profile-form input {
+  width: 400px;
+  max-width: 500px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #2b4ac8;
   border-radius: 5px;
-  background-color: #1a1f5c;
-  color: #fff;
+  background-color: #fff;
+  color: #000000 ;
 }
 
+.profile-form select {
+  width: 422px;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #2b4ac8;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000000 ;
+}
 
+.profile-form textarea {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #2b4ac8;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000000 ;
+  resize: none;
+  font-size: 20px;
+}
 
 .form-buttons {
   display: flex;
@@ -96,7 +98,16 @@
 }
 
 .save-btn {
-  background-color: #2b4ac8;
+  background-color: #0069FF;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #B71212;
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -104,11 +115,3 @@
   cursor: pointer;
 }
 
-.cancel-btn {
-  background-color: #d9534f;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}

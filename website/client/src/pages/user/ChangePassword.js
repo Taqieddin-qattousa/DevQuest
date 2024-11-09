@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import 'styles/ChangePassword.css'; // Create and import this CSS file for styling
 import Navbar from 'components/Navbar';
+
+import Sidebar from 'components/ProfileSidebar';
+
 function ChangePassword() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -9,14 +12,9 @@ function ChangePassword() {
   return (
     <>
     <Navbar />
-    <div className="change-password-page">
-      <div className="sidebar">
-        <ul>
-          <li>Profile</li>
-          <li className="active">Login</li>
-          <li>Billing</li>
-        </ul>
-      </div>
+    <div className="change-password-page">   
+    
+    <Sidebar activeLink="login" /> {/* Set activeLink to "login" */}
       <div className="change-password-content">
         <h2>Change Password</h2>
         <form className="password-form">
@@ -51,6 +49,7 @@ function ChangePassword() {
         </form>
       </div>
     </div>
+    
     </>
   );
 }

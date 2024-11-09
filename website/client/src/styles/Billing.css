@@ -28,10 +28,12 @@
   
   .billing-content {
     flex: 1;
-    padding: 20px;
-    background: linear-gradient(180deg, #0f184a, #16256b);
+    padding: 50px;
+    background: linear-gradient(180deg, #1E3C90, #09112A);
     border-left: 2px solid #1f2d5b;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 20px;
   }
   
   .billing-details {
@@ -50,7 +52,7 @@
   .edit-payment-btn, .cancel-btn {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -61,7 +63,4 @@
     margin-left: 10px;
   }
   
-  .cancel-btn {
-    background-color: #d9534f;
-  }
-  
+ 
