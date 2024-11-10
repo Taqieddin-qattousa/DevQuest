@@ -2,6 +2,7 @@
 import React from 'react';
 import 'styles/Navbar.css';
 import Logo from 'assets/icons/logo.svg';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <a className="navbar-logo" href="home">
           <img src={Logo} alt="DevQuest Logo" className="navbar-logo-image" />
-        </Link>
+        </a>
         <ul className="navbar-links navbar-left-links">
           <li className="navbar-item">
             <a className="navbar-link" href="/">Home</a>
