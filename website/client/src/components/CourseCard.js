@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'styles/CourseCard.css';
-import { useNavigate } from 'react-router-dom';
+
 
 const CourseCard = ({ title, level, rating, students, description,icon,color,btnpath,courseId }) => {
   const navigate = useNavigate();
