@@ -13,7 +13,8 @@ import Dashboard from 'pages/admin/Dashboard';
 import Profile from 'pages/user/Profile';
 import ChangePassword from 'pages/user/ChangePassword';
 import Billing from 'pages/user/Billing';
-
+import Students from 'pages/admin/Students';
+import AdminCourses from 'pages/admin/AdminCourses';
 import './App.css';
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/ChangePassword" element={<ChangePassword />} />
         <Route path="/Billing" element={<Billing />} />
-
+        <Route path="/Students" element={<Students />} />
+        <Route path="/AdminCourses" element={<AdminCourses />} />
       </Routes>
     </Router>
   );

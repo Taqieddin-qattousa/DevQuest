@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUserGraduate, FaUserPlus, FaBook } from 'react-icons/fa';
 import 'pages/admin/styles/DashboardContent.css';
 
 const DashboardContent = () => {
@@ -14,14 +15,17 @@ const DashboardContent = () => {
       
       <div className="stats-cards">
         <div className="card">
+          <FaUserGraduate className="icon" />
           <h3>3280</h3>
           <p>Students</p>
         </div>
         <div className="card">
+          <FaUserPlus className="icon" />
           <h3>3280</h3>
           <p>New Students in the last week</p>
         </div>
         <div className="card">
+          <FaBook className="icon" />
           <h3>28</h3>
           <p>Courses</p>
         </div>
@@ -29,7 +33,10 @@ const DashboardContent = () => {
 
       <div className="activity-section">
         <div className="recent-activity">
-          <h2>Recent Activity</h2>
+          <div className="activity-header">
+            <h2>Recent Activity</h2>
+            <button className="see-all-button">See all</button>
+          </div>
           <ul>
             <li>New student registered: Ahmed</li>
             <li>Course "JavaScript Basics" published</li>
@@ -38,7 +45,10 @@ const DashboardContent = () => {
           </ul>
         </div>
         <div className="new-students">
-          <h2>New Students</h2>
+          <div className="activity-header">
+            <h2>New Students</h2>
+            <button className="see-all-button">See all</button>
+          </div>
           <ul>
             <li>Ahmed Ali</li>
           </ul>
