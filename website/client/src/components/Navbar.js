@@ -25,7 +25,7 @@ const Navbar = () => {
         <input type="search" className="navbar-search" placeholder="Search..." />
         <ul className="navbar-links navbar-right-links">
           <li className="navbar-item">
-            <a className="navbar-link" href="/CourseSection">Pricing</a>
+            <a className="navbar-link" href="/pricing">Pricing</a>
           </li>
           <li className="navbar-item">
           <Link className="navbar-link" to="/LoginPage">Log in</Link>
