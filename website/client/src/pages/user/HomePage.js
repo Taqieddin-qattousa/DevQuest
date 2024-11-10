@@ -1,6 +1,7 @@
 // /src/pages/HomePage.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import Navbar from 'components/Navbar';
 import FAQSection from 'components/FAQSection';
 import 'styles/HomePage.css';

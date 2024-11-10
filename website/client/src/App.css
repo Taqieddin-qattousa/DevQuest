@@ -13,6 +13,12 @@
   font-weight: 100;
   font-style: italic;
 }
+@font-face {
+  font-family: 'LibreFranklin-Medium';
+  src: url('assets/fonts/librefranklinfont/LibreFranklin-Medium.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
 
 .App-logo {
   height: 40vmin;
