@@ -27,7 +27,7 @@ const StudentSubscriptionTable = () => {
       <Sidebar />
       
       <div className="student-subscription-content">
-        <h2>Students Subscribed to the Website</h2>
+        <h2 className='PageTitle'>Students Subscribed to the Website</h2>
         
         <div className="search-bar">
           <input 

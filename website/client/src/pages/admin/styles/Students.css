@@ -8,7 +8,11 @@
     color: #333;
     margin-bottom: 20px;
   }
-  
+
+ .PageTitle {
+    color: #000000;
+  }
+
   .search-bar {
     display: flex;
     gap: 10px;
