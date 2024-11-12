@@ -13,7 +13,9 @@ const CoursesPage = () => {
   return (
     
     <div className="courses-page">
-        <Navbar/>
+     
+     <Navbar/>
+     
       <header className="courses-header">
         <p className='hero-head'>All Courses</p>
         <p className='hero-para'>A large number of courses on different topics are waiting for you.

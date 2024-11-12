@@ -21,7 +21,8 @@ const HomePage = () => {
           <p>Explore our wide range of courses and take your skills to the next level.</p>
           <div className="hero-buttons">
             <button className="btn browse-btn" onClick={() => navigate('/CoursesPage')}>Browse courses</button>
-            <button className="btn create-btn">Create account</button>
+            <button className="btn create-btn" onClick={()=> navigate('/RegistrationPage')}>Create account</button >
+            
           </div>
         </div>
         <div className="hero-image">
