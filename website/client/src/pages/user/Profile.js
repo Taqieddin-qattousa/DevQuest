@@ -1,18 +1,31 @@
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from 'components/Navbar';
-import React, { useState } from 'react';
-import 'styles/Profile.css';
-import { Link } from 'react-router-dom';
 import Sidebar from 'components/ProfileSidebar';
+import { useAuth } from 'AuthContext';
+import 'styles/Profile.css';
 
 function ProfilePage() {
+  const { user } = useAuth();
+  const navigate = useNavigate();
   const [name, setName] = useState('Morty Smith');
   const [country, setCountry] = useState('Palestine');
   const [bio, setBio] = useState(
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut velit imperdiet, vulputate sapien eu, maximus tellus. Nam tellus sem, condimentum et rhoncus a, interdum.'
   );
 
+  useEffect(() => {
+    // Debug: Log user data to check if it's correctly set
+    console.log("User data:", user);
+
+    // Redirect to home if user is not authenticated
+    if (!user || !user.token) {
+      navigate('/');
+    }
+  }, [user, navigate]);
+
   const handleProfilePicChange = (e) => {
-    const file = e.target.files[0];
+   // const file = e.target.files[0];
     // Handle profile picture upload logic here
   };
 

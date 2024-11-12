@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import 'styles/AuthPage.css';
 
 const SignupPage = () => {
@@ -17,9 +18,17 @@ const SignupPage = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    try {
+      const response = await axios.post('http://localhost:5000/api/signup', formData);
+
+      console.log(response.data.message);
+      // You could redirect to login page here
+      window.location.href = '/LoginPage';
+    } catch (err) {
+      console.error('Error during signup:', err);
+    }
   };
 
   return (
